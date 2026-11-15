@@ -1,0 +1,6 @@
+# Abema
+DOMAIN-SUFFIX,webrtc-dk.tliveplay.com
+DOMAIN-SUFFIX,sdkdc.live.tlivesource.com
+
+# USER-AGENT: 1
+USER-AGENT,Disney+*
