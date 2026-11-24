@@ -1,16 +1,5 @@
-# Shadowrocket: 2026-11-23 15:26:36
+# Shadowrocket: 2026-11-24 21:59:24
 [General]
-# Shadowrocket 快速使用方法：
-# 1、首页 > 添加节点。
-# 2、设置 > 延迟测试方法，选择 CONNECT。
-# 3、首页 > 连通性测试，选择可用节点连接。
-# 首次启动会提示【安装 VPN 配置文件】，请点击【好】和【允许】才能正常使用。
-
-# 添加/更新节点订阅失败时，可尝试以下方法：
-# 1、首页选择一个可用节点，首页 > 全局路由 > 代理，再添加/更新节点订阅。
-# 2、切换网络连接（如关闭 VPN、蜂窝数据改 Wi-Fi、Wi-Fi 改蜂窝数据），再添加/更新节点订阅。
-# 3、检查节点订阅是否错误或失效，重新获取正确有效的订阅地址。
-
 # Shadowrocket 打开 HTTPS 解密方法：
 # 1、点击“配置文件”后面 ⓘ > HTTPS 解密 > 证书 > 生成新的 CA 证书 > 安装证书。
 # 2、系统设置 > 已下载描述文件 > 安装。
@@ -25,9 +14,6 @@ tun-excluded-routes = 10.0.0.0/8, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 19
 
 # DNS 覆写。使用普通 DNS 或加密 DNS（如 DoH、DoQ、DoT 等）覆盖默认的系统 DNS。填 system 表示使用系统 DNS。
 dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,223.5.5.5,119.29.29.29
-
-# 直连 DNS。用于解析匹配直连域名规则的域名。
-direct-dns-server = https://doh.pub/dns-query,https://dns.alidns.com/dns-query,223.5.5.5,119.29.29.29
 
 # 备用 DNS。当覆写 DNS 查询失败或查询时间超过 2 秒，Shadowrocket 会自动回退备用 DNS。
 fallback-dns-server = system
@@ -65,8 +51,6 @@ stun-response-ipv6 = ::1
 
 # QUIC协议屏蔽策略。all-proxy 仅对代理连接阻断 QUIC，不影响直连。
 block-quic = all-proxy
-
-update-url = https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/lazy_group.conf
 
 [Proxy]
 # 添加本地节点。该项目的节点解析是为了兼容部分配置文件，不能当作Shadowrocket添加节点的优先选择。
@@ -112,6 +96,9 @@ DOMAIN-SUFFIX,lit.link,新加坡节点
 # ShowRoom
 DOMAIN-SUFFIX,webrtc-dk.tliveplay.com,日本节点
 DOMAIN-SUFFIX,sdkdc.live.tlivesource.com,日本节点
+
+# 个人自建 GitHub 规则集（日本/小众）
+RULE-SET,https://raw.githubusercontent.com/longooyue/Address/refs/heads/main/Japan.list,日本节点
 
 # ==========================================
 # 常用服务规则集（GitHub 维护）
