@@ -93,10 +93,13 @@ Amazon = select,DIRECT,PROXY,香港节点,台湾节点,日本节点,新加坡节
 # ==========================================
 DOMAIN-SUFFIX,lit.link,新加坡节点
 
-# ShowRoom
+# SHOWROOM
 DOMAIN-SUFFIX,webrtc-dk.tliveplay.com,日本节点
 DOMAIN-SUFFIX,sdkdc.live.tlivesource.com,日本节点
-DOMAIN-SUFFIX,ds-glb-linear-abematv.akamaized.net,日本节点
+
+# Abema地区判定
+DOMAIN-SUFFIX,api.p-c3-e.abema-tv.com,日本节点
+
 # 个人自建 GitHub 规则集（日本/小众）
 RULE-SET,https://raw.githubusercontent.com/longooyue/Address/refs/heads/main/Japan.list,日本节点
 
