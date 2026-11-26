@@ -99,6 +99,12 @@ DOMAIN-SUFFIX,sdkdc.live.tlivesource.com,日本节点
 
 # Abema地区判定
 DOMAIN-SUFFIX,api.p-c3-e.abema-tv.com,日本节点
+DOMAIN-SUFFIX,abema.tv,日本节点
+DOMAIN-SUFFIX,abema.io,日本节点
+DOMAIN-SUFFIX,abema-tv.com,日本节点
+DOMAIN-SUFFIX,abematv.co.jp,日本节点
+DOMAIN-SUFFIX,hayabusa.io,日本节点
+DOMAIN-SUFFIX,hayabusa.media,日本节点
 
 # 个人自建 GitHub 规则集（日本/小众）
 RULE-SET,https://raw.githubusercontent.com/longooyue/Address/refs/heads/main/Japan.list,日本节点
